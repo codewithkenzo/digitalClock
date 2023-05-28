@@ -1,0 +1,43 @@
+body {
+    border: 20px salmon;
+    overflow: hidden;
+    background: conic-gradient(from .5turn at top right, darkseagreen, darkslategray);
+    font-family:'Courier New', Courier, monospace
+    }
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+    height: 600px;
+}
+
+.digClock {
+    width: fit-content;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.digClock h1 {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 4rem;}
+
+    @media (max-width: 768px) {
+        #bar1, #bar2 {
+            display: none;
+            
+        }
+
+        .digClock h1 {
+            font-size: 2rem;
+            display: block;
+            justify-content: center;
+            text-align: center;
+        }
+    }
